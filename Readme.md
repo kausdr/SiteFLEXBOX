@@ -1,0 +1,1 @@
+Arquivo criado apenas para treinar o versionamento com Git
