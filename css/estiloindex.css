@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    color:rgb(65, 34, 17);
+}
+
+header{
+    background-color: rgb(243, 217, 222);
+    height: 60px;
+}
+
+header nav{
+    display: none;
+}
+
+.container{
+    /* border: 1px solid yellow; */
+    width: 90%;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0px 15px;
+    box-sizing: border-box;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin-left: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.logo{
+    margin-top: -3px;
+    max-width: 65px;
+}
+
+section.hero{
+    background-image: url('../imgss/backgroundcat2.jpg');
+    height: 400px;
+    background-size: cover;
+}
+
+section.hero .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+section.hero .hero-content h2{
+    margin: 0;
+}
+
+section.hero .hero-content p{
+    margin: 8px 0px;
+    max-width: 350px;
+}
+
+section.hero .hero-content button{
+    background-color: rgb(243, 217, 222);
+    border: none;
+    box-shadow: 0px 2px 3px rgb(65, 34, 17);
+    padding: 7px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+section.products{
+    padding: 40px 0px;
+}
+
+section.products .product{
+    background-color: lightgray;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+section.products .container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+@media screen and (min-width: 576px){
+    .container{
+        /* border: 1px solid yellow; */
+        max-width: 540px;
+    }
+    
+    header nav{
+        display: block;
+    }
+
+    header .container{
+        justify-content: space-between;
+    }
+
+    .container{
+        padding: 0px;
+    }
+
+    section.products .product{
+        width: 30%;
+        margin-bottom: 0px;
+    }
+    
+    section.products .container{
+        flex-direction: row;
+    }
+    
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        /* border: 1px solid yellow; */
+        max-width: 720px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .container{
+        /* border: 1px solid yellow; */
+        max-width: 960px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .container{
+        /* border: 1px solid yellow; */
+        max-width: 1140px;
+    }
+}
